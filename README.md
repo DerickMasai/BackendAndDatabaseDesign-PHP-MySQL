@@ -50,7 +50,7 @@ The Profile page simply uses the session created using the user's email and pull
 The Log Out button simply points to a PHP script which destroys the current session and UNSETs the email session. It then redirects the user to the Log In page with a message showing the user has een successfully logged out.
 
 ---
-The Delete Account button points to a PHP script that applies PHP and MySQL's DELETE query to remove the user's entire information from the database. This is the equivalent of deleting their account. It redirects them to the Sign up page with a message confirming deletion visible.
+The Delete My Account button points to a PHP script that applies PHP and MySQL's DELETE query to remove the user's entire information from the database. This is the equivalent of deleting their account. It redirects them to the Sign up page with a message confirming deletion visible.
 
 
 #### _Edit Profile page_
