@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+@font-face {
+    font-family: BlowBrush;
+    src: url(../fonts/BlowBrush.otf);
+}
+@font-face {
+    font-family: ADAM;
+    src: url(../fonts/ADAM.CG.otf);
+}
+@font-face {
+    font-family: Gravity Regular;
+    src: url(../fonts/Gravity-Regular.otf);
+}
+@font-face {
+    font-family: Gravity Light;
+    src: url(../fonts/Gravity-Light.otf);
+}
+
+:root {
+    --pure-color: #fff;
+    --dark-color: #000;
+    --primary-color: #f64c72;
+    --secondary-color: #242582; 
+    --accent-color: #2f2fa2; 
+    --tertiary-color: #99738e; 
+}
+
+body{
+    background: url('../img/white_wall_hash.png') repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    height: 40px;
+    width: 100%;
+    background: url('../img/purple-background.jpg') no-repeat center, var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    order: 1;
+}
+
+nav h1{
+    font-family: 'BlowBrush';
+    font-size: 2.25em;
+    color: var(--primary-color);
+    margin: auto auto auto 15px;
+    order: 1;
+    letter-spacing: 3px;
+    word-spacing: -8px;
+    cursor: default;
+}
+
+nav a{
+    font-family: 'Gravity Light';
+    font-size: 0.8em;
+    color: var(--pure-color);
+    margin: auto 15px auto 0;
+    padding: 2px 25px 3px 25px;
+    border: 3px double var(--pure-color);
+    border-radius: 2px;
+    text-decoration: none;
+    order: 2;
+    transition: color 0.3s ease-out,border 0.3s ease-out;
+}
+
+nav a:hover{
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.user{
+    height: auto;
+    width: 30%;
+    order: 2;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto 15px auto;
+    background: url('../img/profile_default.png') no-repeat center, var(--primary-color);
+    background-size: contain;
+    border: 8px double var(--pure-color);
+    border-radius: 125px;
+}
+
+.user span{
+    font-family: 'Gravity Regular';
+    font-size: 1.1em;
+    margin: 0 auto;
+    color: var(--accent-color);
+}
+
+.user span small{
+    margin-right: 10px;
+}
+
+main{
+    height: auto;
+    width: 30%;
+    order: 3;
+    margin: 0 auto;
+}
+
+.row{
+    height: auto;
+    width: 80%;
+    margin: auto auto 25px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    height: 25px;
+    width: 25px;
+    order: 1;
+    margin: auto 15px auto 0;
+}
+
+.icon.email{
+    background: url('../img/email.png') no-repeat center;
+    background-size: contain;
+}
+
+.icon.joined{
+    background: url('../img/joined.png') no-repeat center;
+    background-size: contain;
+}
+
+span{
+    font-family: 'Gravity Regular';
+    font-size: 0.95em;
+    color: var(--accent-color);
+    margin: auto 0;
+    order: 2;
+}
+
+hr{
+    margin: 0 auto 25px auto;
+    border: 0.3px solid var(--tertiary-color);
+    opacity: 0.2;
+}
+
+.btn{
+    font-family: 'Gravity Regular';
+    font-size: 0.9em;
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: auto;
+    padding: 3px 10px 4px 10px;
+    border: 1px solid var(--accent-color);
+}
+
+.btn.delete{
+    padding: 3px 10px 4px 10px;
+}
+
+.btn.logout{
+    padding: 4px 40px 4px 40px;
+    color: #fff;
+    background: var(--primary-color);
+    border: 3px double var(--pure-color);
+}
