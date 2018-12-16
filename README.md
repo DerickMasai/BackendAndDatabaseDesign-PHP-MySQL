@@ -35,15 +35,15 @@ _On this page, the user can change the details entered during signup_
 
 ## How It Works
 
-### Landing (Signup) page
+#### _Landing (Signup) page_
 The user first arrives at the landing page which is the sign up page and registers. This is done using PHP and MySQL, the INSERT query to be specific, which checks the data to ensure it conforms to the site's guidelines then 'posts' it to the database and creates a session for the user using their email. This prevents the user from having to log in again repeatedly. It then takes the user to their profile page.
 
 
-### Log In page
+#### _Log In page_
 The Log in page is used by already registered users to get access to their account. Once the user enters their data, it is checked to ensure it matches the ones on file using PHP and the MySQL SELECT and WHERE queries it creates a session using their email and takes them to the Profile page.
 
 
-### Profile page
+#### _Profile page_
 The Profile page simply uses the session created using the user's email and pulls their data from the database using PHP and the MySQL SELECT and WHERE queries. This information is then displayed using PHP onto the profile page.
 
 ---
@@ -53,7 +53,7 @@ The Log Out button simply points to a PHP script which destroys the current sess
 The Delete Account button points to a PHP script that applies PHP and MySQL's DELETE query to remove the user's entire information from the database. This is the equivalent of deleting their account. It redirects them to the Sign up page with a message confirming deletion visible.
 
 
-### Edit Profile page
+#### _Edit Profile page_
 Lastly, the Edit My Profile utton redirects the user to a page where they can enter new information which will effectively overwrite the old data. This is done using PHP and MySQL's UPDATE query.
 
 
