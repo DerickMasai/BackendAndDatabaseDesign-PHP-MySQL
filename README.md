@@ -14,16 +14,19 @@ My apprroach to creating this simple we application was guided by the project's 
 The following are the screenshots for the site
 
 <img src="North-Signup.PNG" alt="NORTH Sign Up page" width="683" height="394">
-*This is the Landing page which for users to sign up to the site or click the Log In button*
+_This is the Landing page which for users to sign up to the site or click the Log In button_
+
 
 <img src="North-Login.PNG" alt="NORTH Log In page" width="683" height="394">
-*This is the Login page which for users to log in to the accounts on the site*
+_This is the Login page which for users to log in to the accounts on the site_
+
 
 <img src="North-Profile.PNG" alt="NORTH Profile page" width="683" height="394">
-*This page simply contains the user's information and options to change it, log out or delete their accounts*
+_This page simply contains the user's information and options to change it, log out or delete their accounts_
+
 
 <img src="North-Profile-ChangeDetails.PNG" alt="NORTH Change Profile Details page" width="683" height="394">
-*On this page, the user can change the details entered during signup*
+_On this page, the user can change the details entered during signup_
 
 
 ## How It Works
